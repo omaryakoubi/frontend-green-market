@@ -1,7 +1,7 @@
 <template>
   <nav>
     <v-toolbar flat app>
-      <v-app-bar-nav-icon class="grey--text ml-2" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="grey--text ml-2" @click="drawerControl()"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase">
         <span class="green--text">Green</span>
         <span class="font-weight-light">Market</span>
@@ -70,13 +70,19 @@
 <script>
 export default {
   name: "Navbar",
+  
   data() {
     return {
       drawer: false
     };
   },
-
-};
+  
+  methods: {
+    drawerControl() {
+      this.drawer = !this.drawer
+    }
+  }
+}
 </script>
 
 <style scoped></style>

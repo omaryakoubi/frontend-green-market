@@ -1,29 +1,25 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs12 sm6 md6 lg4 v-for="product in products" :key="product.name">
+    <v-flex xs12 sm6 md4 lg3 v-for="product in products" :key="product.name">
       <v-card
         :loading="loading"
         class="mx-auto my-12"
         mix-width="220"
         max-width="220"
       >
-        <template slot="progress">
-          <v-progress-linear color="deep-purple" height="10" indeterminate>
-          </v-progress-linear>
-        </template>
         <v-img height="130" cover auto :src="product.image"></v-img>
         <v-card-title>{{ product.name }}</v-card-title>
         <v-card-text>
           <div>
-            {{ product.desc }}
+            {{ product.description }}
           </div>
           <p class="">{{ product.price }} DTN/KG</p>
         </v-card-text>
         <v-divider class="mx-4"></v-divider>
         <v-card-actions>
           <v-btn
-            class="mx-6"
-            color="green lighten-1 display-1"
+            class="mx-16"
+            color="green lighten-1"
             text
           >
             BUY
@@ -41,25 +37,38 @@ export default {
     return {
       products: [
         {
-          name: "kiwi",
+          name: "Kiwi",
           image:
-            "https://images.wallpaperscraft.com/image/kiwi_macro_fruits_106994_1920x108.jpg",
-          description: "fresh",
-          price: 2,
+            "https://lh3.googleusercontent.com/proxy/artP1lc8GWYgTuuMMA8y5YeizuRQLE6AHfycJzSliPvYCwZFLeiaf8NYwVsynBqx5XG5b14sGA492ucE97zcJ3Kw68sz82rj6rcQuQGz8XGcW3mpCgqVZSSeCQ",
+          description: "very good quality",
+          price: 8,
         },
         {
-          name: "tomato",
+          name: "Tomato",
           image:
             "https://images.wallpaperscraft.com/image/tomatoes_tomato_ripe_vegetable_106889_1920x1080.jpg",
-          description: "fresh",
+          description: "fresh tunisian quality",
           price: 3,
         },
         {
-          name: "potato",
+          name: "Potato",
           image: "https://cutewallpaper.org/21/potato-backgrounds/Peeling-Potatoes-Wallpapers-Hd-Type-Of-Food-Is-Amylase-.jpg",
-          description: 5,
+          description: "very good price bio",
+          price: 4,
+        },
+        {
+          name: "Sugar",
+          image: "https://wallpaperaccess.com/full/1463179.jpg",
+          description: "sugar",
+          price: 1,
+        },
+        {
+          name: "Mushroom",
+          image: "https://static.lecomptoirlocal.fr/img/produits/4fa0020a-5e7d-49b7-90c2-153d5bae7e17/large.jpg",
+          description: "mushroom bio produced in tunisia",
           price: 10,
         },
+
       ],
     };
   },
