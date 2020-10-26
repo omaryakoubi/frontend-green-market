@@ -6,7 +6,7 @@
         <span>Market</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn falt color="grey">
+      <v-btn text tile color="grey">
         <span>Sign Out</span>
         <v-icon right>mdi-exit-to-app</v-icon>
       </v-btn>

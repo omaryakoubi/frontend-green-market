@@ -1,20 +1,14 @@
 <template>
-  <div class="app">
-    <v-app>
-      <Navbar/>
-    </v-app>
-  </div>
+  <v-app class="grey lighten-2">
+    <Navbar />
+  </v-app>
 </template>
 
-
 <script>
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 export default {
-  components: {Navbar}
-  
-}
+  components: { Navbar },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
