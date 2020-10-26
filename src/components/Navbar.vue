@@ -3,7 +3,7 @@
     <v-toolbar flat app>
       <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase">
-        <span class="font-weight-light">Green</span>
+        <span class="font-weight-light green--text">Green</span>
         <span>Market</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
