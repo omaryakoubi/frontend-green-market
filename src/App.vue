@@ -1,15 +1,15 @@
 <template>
   <v-app class="grey lighten-2">
-    <!-- <Navbar /> -->
+    <Navbar />
     <ProductCard/>
   </v-app>
 </template>
 
 <script>
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import ProductCard from "./components/ProductCard"
 export default {
-  components: { ProductCard },
+  components: { Navbar, ProductCard },
 };
 </script>
 
