@@ -11,15 +11,12 @@
           <v-progress-linear color="deep-purple" height="10" indeterminate>
           </v-progress-linear>
         </template>
-        <v-img height="130" cover auto src="{{product.image}}"></v-img>
-
+        <v-img height="130" cover auto :src="product.image"></v-img>
         <v-card-title>{{ product.name }}</v-card-title>
-
         <v-card-text>
           <div>
             {{ product.desc }}
           </div>
-
           <p class="">{{ product.price }} DTN/KG</p>
         </v-card-text>
         <v-divider class="mx-4"></v-divider>
@@ -60,8 +57,7 @@ export default {
         },
         {
           name: "potato",
-          image:
-            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fsearch%3Fwallpaper%3Dpotato&psig=AOvVaw0ZuBRCkxwDUfdRA87e4__z&ust=1603816573165000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjB_8DY0uwCFQAAAAAdAAAAABAD",
+          image: "https://cutewallpaper.org/21/potato-backgrounds/Peeling-Potatoes-Wallpapers-Hd-Type-Of-Food-Is-Amylase-.jpg",
           description: 5,
           price: 10,
         },
