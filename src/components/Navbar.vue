@@ -21,9 +21,15 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item class="mx-14">
+          <v-list-item-content>
+            <v-list-item-title class="white--text display-1">Omar</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item>
           <v-list-item-action>
-            <v-icon class="white--text">mdi-account-circle</v-icon>
+            <v-icon class="white--text"> mdi-account-circle</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title class="white--text">Account</v-list-item-title>
