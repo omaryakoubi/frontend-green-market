@@ -7,10 +7,6 @@
         <span class="font-weight-light">Market</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn text tile color="grey">
-        <span>Sign Out</span>
-        <v-icon right>mdi-exit-to-app</v-icon>
-      </v-btn>
     </v-toolbar>
 
     <v-navigation-drawer app class="green" v-model="drawer" >
@@ -37,6 +33,14 @@
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title class="white--text">Cart</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item>
+          <v-list-item-action>
+            <v-icon class="white--text">mdi-exit-to-app</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title class="white--text">Sign Out</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
