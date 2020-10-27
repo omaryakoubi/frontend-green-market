@@ -1,12 +1,12 @@
 <template>
   <div>
-    <v-btn class="red lighten-5" @click="decrement()">
+    <v-btn class="red lighten-5" flat @click="decrement()">
       <v-icon class="red--text">mdi-minus-box</v-icon>
     </v-btn>
     <v-btn class="lighten-1">
       {{ number }}
     </v-btn>
-    <v-btn class="green lighten-5" @click="increment()">
+    <v-btn class="green lighten-5" flat @click="increment()">
       <v-icon class="green--text">mdi-plus-box</v-icon>
     </v-btn>
   </div>

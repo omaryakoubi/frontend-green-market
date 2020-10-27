@@ -33,7 +33,7 @@
         <v-flex lg1>
       <div></div>
     </v-flex>
-  <NumberInput/>
+ <center><NumberInput/></center>
   </v-layout>
 </template>
 
@@ -76,74 +76,6 @@ export default {
             "https://images.wallpaperscraft.com/image/tomatoes_tomato_ripe_vegetable_106889_1920x1080.jpg",
           description: "fresh tunisian quality",
           price: 3,
-        },
-        {
-          name: "Potato",
-          image: "https://cutewallpaper.org/21/potato-backgrounds/Peeling-Potatoes-Wallpapers-Hd-Type-Of-Food-Is-Amylase-.jpg",
-          description: "very good price bio",
-          price: 4,
-        },
-        {
-          name: "Sugar",
-          image: "https://wallpaperaccess.com/full/1463179.jpg",
-          description: "sugar",
-          price: 1,
-        },
-        {
-          name: "Mushroom",
-          image: "https://static.lecomptoirlocal.fr/img/produits/4fa0020a-5e7d-49b7-90c2-153d5bae7e17/large.jpg",
-          description: "mushroom bio",
-          price: 10,
-        },
-         {
-          name: "Tomato",
-          image:
-            "https://images.wallpaperscraft.com/image/tomatoes_tomato_ripe_vegetable_106889_1920x1080.jpg",
-          description: "fresh tunisian quality",
-          price: 3,
-        },
-        {
-          name: "Potato",
-          image: "https://cutewallpaper.org/21/potato-backgrounds/Peeling-Potatoes-Wallpapers-Hd-Type-Of-Food-Is-Amylase-.jpg",
-          description: "very good price bio",
-          price: 4,
-        },
-        {
-          name: "Sugar",
-          image: "https://wallpaperaccess.com/full/1463179.jpg",
-          description: "sugar",
-          price: 1,
-        },
-        {
-          name: "Mushroom",
-          image: "https://static.lecomptoirlocal.fr/img/produits/4fa0020a-5e7d-49b7-90c2-153d5bae7e17/large.jpg",
-          description: "mushroom bio",
-          price: 10,
-        },
-         {
-          name: "Tomato",
-          image:
-            "https://images.wallpaperscraft.com/image/tomatoes_tomato_ripe_vegetable_106889_1920x1080.jpg",
-          description: "fresh tunisian quality",
-          price: 3,
-        },
-        {
-          name: "Potato",
-          image: "https://cutewallpaper.org/21/potato-backgrounds/Peeling-Potatoes-Wallpapers-Hd-Type-Of-Food-Is-Amylase-.jpg",
-          description: "very good price bio",
-          price: 4,
-        },
-        {
-          name: "Sugar",
-          image: "https://wallpaperaccess.com/full/1463179.jpg",
-          description: "sugar",
-          price: 1,
-        },
-        {
-          name: "Mushroom",
-          image: "https://static.lecomptoirlocal.fr/img/produits/4fa0020a-5e7d-49b7-90c2-153d5bae7e17/large.jpg",
-          description: "mushroom bio",
-          price: 10,
         },
       ],
     };
