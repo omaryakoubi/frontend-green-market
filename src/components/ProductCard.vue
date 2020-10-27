@@ -19,11 +19,13 @@
         <v-divider class="mx-4"></v-divider>
         <v-card-actions>
           <v-btn
-            class="mx-16"
+            class="mx-2"
             color="green lighten-1"
             text
-          >
-            BUY
+          >Add to cart 
+          <v-icon>
+            mdi-cart
+          </v-icon>
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -67,7 +69,7 @@ export default {
         {
           name: "Mushroom",
           image: "https://static.lecomptoirlocal.fr/img/produits/4fa0020a-5e7d-49b7-90c2-153d5bae7e17/large.jpg",
-          description: "mushroom bio produced in tunisia",
+          description: "mushroom of paris",
           price: 10,
         },
 
