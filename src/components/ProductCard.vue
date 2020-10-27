@@ -1,11 +1,12 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs12 sm6 md4 lg3 v-for="product in products" :key="product.name">
+    <v-flex lg1></v-flex>
+    <v-flex xs12 sm5 md3 lg2 v-for="product in products" :key="product.name">
       <v-card
         :loading="loading"
         class="mx-auto my-12"
         mix-width="220"
-        max-width="220"
+        max-width="170"
       >
         <v-img height="130" cover auto :src="product.image"></v-img>
         <v-card-title>{{ product.name }}</v-card-title>
@@ -27,6 +28,7 @@
         </v-card-actions>
       </v-card>
     </v-flex>
+     <v-flex lg1></v-flex>
   </v-layout>
 </template>
 
