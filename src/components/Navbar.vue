@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <v-toolbar flat app >
-      <v-app-bar-nav-icon 
+    <v-toolbar flat app>
+      <v-app-bar-nav-icon
         class="grey--text ml-9"
         @click="drawerControl()"
       ></v-app-bar-nav-icon>
@@ -15,7 +15,6 @@
 </template>
 
 <script>
-
 export default {
   name: "Navbar",
   data() {
