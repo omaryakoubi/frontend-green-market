@@ -1,12 +1,12 @@
 <template>
   <div>
     <v-btn class="white lighten-1">
-      <v-icon class="red--text ">mdi-minus-box</v-icon>
+      <v-icon class="red--text" @click="decrement()">mdi-minus-box</v-icon>
     </v-btn>
     <v-btn class="lighten-1">
-        {{number}}
+      {{ number }}
     </v-btn>
-    <v-btn class="lighten-1" @click="addOne">
+    <v-btn class="lighten-1" @click="increment()">
       <v-icon class="green--text lighten-1">mdi-plus-box</v-icon>
     </v-btn>
   </div>
@@ -16,20 +16,22 @@
 export default {
   name: "NumberInput",
   data() {
-      return {
-          number:0
-      }
+    return {
+      number: 0,
+    };
   },
 
-  methods:{
-      addOne() {
-          if (this.number <=0 ) {
-              this.number +=1
-          } else {
-              return null
-          }
+  methods: {
+    increment() {
+      this.number += 1;
+    },
+
+    decrement() {
+      if (this.number > 0) {
+        this.number -= 1;
       }
-  }
+    },
+  },
 };
 </script>
 
