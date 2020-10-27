@@ -3,7 +3,7 @@
     <v-flex lg1>
       <div></div>
     </v-flex>
-    <v-flex xs6 sm4 md3 lg2 v-for="product in products" :key="product.name" >
+    <v-flex xs12 sm6 md3 lg2 v-for="product in products" :key="product.name" >
       <v-card
         :loading="loading"
         class="mx-auto my-9"
@@ -33,12 +33,15 @@
         <v-flex lg1>
       <div></div>
     </v-flex>
+  <NumberInput/>
   </v-layout>
 </template>
 
 <script>
+import NumberInput from './NumberInput'
 export default {
   name: "ProductCard",
+  components: { NumberInput },
   data() {
     return {
       products: [
@@ -146,6 +149,7 @@ export default {
     };
   },
 };
+
 </script>
 
 <style scoped></style>
