@@ -1,6 +1,9 @@
 <template>
   <v-layout row wrap>
-    <v-flex xs12 sm5 md3 lg3 v-for="product in products" :key="product.name">
+    <v-flex lg1>
+      <div></div>
+    </v-flex>
+    <v-flex xs6 sm4 md3 lg2 v-for="product in products" :key="product.name" >
       <v-card
         :loading="loading"
         class="mx-auto my-9"
@@ -26,6 +29,9 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+    </v-flex>
+        <v-flex lg1>
+      <div></div>
     </v-flex>
   </v-layout>
 </template>
