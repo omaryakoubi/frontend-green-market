@@ -1,10 +1,7 @@
 <template>
   <nav>
     <v-toolbar flat app>
-      <v-app-bar-nav-icon
-        class="grey--text ml-9"
-        @click="drawerControl()"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="grey--text ml-9"></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase">
         <span class="green--text">Green</span>
         <span class="font-weight-light">Market</span>
@@ -17,16 +14,15 @@
 <script>
 export default {
   name: "Navbar",
+
   data() {
     return {
-      drawer: false,
+      drawer: "",
     };
   },
 
-  methods: {
-    drawerControl() {
-      this.drawer = !this.drawer;
-    },
+  mounted() {
+    this.drawer = this.$store.getters.GET_DRAWER;
   },
 };
 </script>

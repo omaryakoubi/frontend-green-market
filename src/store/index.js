@@ -6,14 +6,29 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     cart: [],
+    drawer: false,
   },
   getters: {
-    STATE: (state) => state.cart,
+    GET_CART(state) {
+      return state.cart;
+    },
+    GET_DRAWER(state) {
+      return state.drawer;
+    },
   },
   mutations: {
-    SET_ITEM: (state, payload) => (state.cart = payload),
-    ADD_ITEM: (state, payload) => state.cart.push(payload),
+    ADD_PRODUCT(state, payload) {
+      state.cart.push(payload);
+    },
+    CHANGE_DRAWER(state) {
+      state.drawer = !state.drawer;
+    },
   },
-  actions: {},
+
+  actions: {
+    SET_DRAWER(state) {
+      state.drawer = !state.drawer
+    }
+  },
   modules: {},
 });
