@@ -1,19 +1,6 @@
 <template>
-  <v-app class="grey lighten-2">
-    <Navbar />
-    <!-- <Sidebar/> -->
-    <ProductCard/>
-  </v-app>
+  <div id="app">
+    <router-link></router-link>
+    <router-view />
+  </div>
 </template>
-
-<script>
-import Navbar from "./components/Navbar";
-// import Sidebar from "./components/Sidebar";
-import ProductCard from "./components/ProductCard"
-
-export default {
- components: { Navbar, ProductCard,  },
-};
-</script>
-
-<style scoped></style>

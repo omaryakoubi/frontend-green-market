@@ -33,15 +33,12 @@
         <v-flex lg1>
       <div></div>
     </v-flex>
- <center><NumberInput/></center>
   </v-layout>
 </template>
 
 <script>
-import NumberInput from './NumberInput'
 export default {
   name: "ProductCard",
-  components: { NumberInput },
   data() {
     return {
       products: [
