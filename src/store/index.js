@@ -24,11 +24,10 @@ export default new Vuex.Store({
       state.drawer = !state.drawer;
     },
   },
-
   actions: {
     SET_DRAWER(state) {
-      state.drawer = !state.drawer
-    }
+      state.drawer = !state.drawer;
+    },
   },
   modules: {},
 });
