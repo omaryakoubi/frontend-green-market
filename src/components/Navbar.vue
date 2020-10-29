@@ -3,6 +3,7 @@
     <v-toolbar flat app>
       <v-app-bar-nav-icon
         class="grey--text ml-9"
+        @click='open()'
       ></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase">
         <span class="green--text">Green</span>
@@ -30,8 +31,9 @@ export default {
 
   methods: {
     open() {
-      this.drawer = !this.drawer;
-      console.log("omar");
+      console.log(this.drawer,'nav before')
+      this.$store.dispatch('SET_DRAWER')
+      console.log(this.drawer,'nav after')
     },
   },
 };

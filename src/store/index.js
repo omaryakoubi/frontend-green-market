@@ -25,8 +25,9 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    SET_DRAWER(state) {
-      state.drawer = !state.drawer;
+    SET_DRAWER(context) {
+      context.commit("CHANGE_DRAWER")
+    
     },
   },
   modules: {},

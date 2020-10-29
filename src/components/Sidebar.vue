@@ -71,8 +71,8 @@ export default {
 
   mounted() {
     this.drawer = this.$store.getters.GET_DRAWER;
+    console.log(this.drawer, "side")
   },
 };
 </script>
 
-<style scoped></style>
