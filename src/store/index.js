@@ -26,7 +26,7 @@ export default new Vuex.Store({
   },
   actions: {
     SET_DRAWER(context) {
-      context.commit("CHANGE_DRAWER")
+      context.commit("CHANGE_DRAWER",this.state.drawer)
     
     },
   },

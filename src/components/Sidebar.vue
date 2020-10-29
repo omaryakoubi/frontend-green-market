@@ -69,10 +69,8 @@ export default {
     };
   },
 
-  mounted() {
+  created() {
     this.drawer = this.$store.getters.GET_DRAWER;
-    console.log(this.drawer, "side")
   },
 };
 </script>
-

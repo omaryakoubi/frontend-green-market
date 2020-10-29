@@ -10,6 +10,7 @@
         <span class="font-weight-light">Market</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+    {{drawer}}
     </v-toolbar>
   </nav>
 </template>
@@ -26,14 +27,11 @@ export default {
 
   mounted() {
     this.drawer = this.$store.getters.GET_DRAWER;
-    console.log(this.drawer)
   },
 
   methods: {
     open() {
-      console.log(this.drawer,'nav before')
       this.$store.dispatch('SET_DRAWER')
-      console.log(this.drawer,'nav after')
     },
   },
 };

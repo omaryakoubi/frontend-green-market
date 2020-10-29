@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <Navbar />
     <Sidebar />
+    <Navbar />
     <ProductCard />
   </v-app>
 </template>
