@@ -69,6 +69,9 @@ export default {
     };
   },
 
+  mounted() {
+    this.drawer = this.$store.getters.GET_DRAWER;
+  },
 };
 </script>
 

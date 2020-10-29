@@ -1,7 +1,9 @@
 <template>
   <nav>
     <v-toolbar flat app>
-      <v-app-bar-nav-icon class="grey--text ml-9" @click="open()"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="grey--text ml-9"
+      ></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase">
         <span class="green--text">Green</span>
         <span class="font-weight-light">Market</span>
@@ -23,12 +25,13 @@ export default {
 
   mounted() {
     this.drawer = this.$store.getters.GET_DRAWER;
+    console.log(this.drawer)
   },
 
   methods: {
     open() {
       this.drawer = !this.drawer;
-      console.log('omar')
+      console.log("omar");
     },
   },
 };
