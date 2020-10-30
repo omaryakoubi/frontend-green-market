@@ -32,6 +32,7 @@ export default {
   methods: {
     open() {
       this.$store.dispatch('SET_DRAWER')
+      console.log(this.drawer)
     },
   },
 };

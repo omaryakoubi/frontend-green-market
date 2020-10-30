@@ -20,13 +20,14 @@ export default new Vuex.Store({
     ADD_PRODUCT(state, payload) {
       state.cart.push(payload);
     },
-    CHANGE_DRAWER(state) {
-      state.drawer = !state.drawer;
+    CHANGE_DRAWER(state, payload) {
+      payload =  state.drawer = !state.drawer;
+      state.drawer = payload;
     },
   },
   actions: {
     SET_DRAWER(context) {
-      context.commit("CHANGE_DRAWER",this.state.drawer)
+      context.commit("CHANGE_DRAWER")
     
     },
   },
