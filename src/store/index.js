@@ -21,14 +21,13 @@ export default new Vuex.Store({
       state.cart.push(payload);
     },
     CHANGE_DRAWER(state, payload) {
-      payload =  state.drawer = !state.drawer;
+      payload =  !state.drawer;
       state.drawer = payload;
     },
   },
   actions: {
     SET_DRAWER(context) {
       context.commit("CHANGE_DRAWER")
-    
     },
   },
   modules: {},

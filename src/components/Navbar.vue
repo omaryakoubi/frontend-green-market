@@ -3,14 +3,13 @@
     <v-toolbar flat app>
       <v-app-bar-nav-icon
         class="grey--text ml-9"
-        @click='open()'
+        @click="drawerOpen"
       ></v-app-bar-nav-icon>
       <v-toolbar-title class="text-uppercase">
         <span class="green--text">Green</span>
         <span class="font-weight-light">Market</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-    {{drawer}}
     </v-toolbar>
   </nav>
 </template>
@@ -18,21 +17,9 @@
 <script>
 export default {
   name: "Navbar",
-
-  data() {
-    return {
-      drawer: "",
-    };
-  },
-
-  mounted() {
-    this.drawer = this.$store.getters.GET_DRAWER;
-  },
-
   methods: {
-    open() {
-      this.$store.dispatch('SET_DRAWER')
-      console.log(this.drawer)
+    drawerOpen() {
+      this.$store.dispatch("SET_DRAWER");
     },
   },
 };

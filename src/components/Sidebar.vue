@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer app class="green" v-model="drawer">
+  <v-navigation-drawer app class="green" v-model="getDrawer">
     <v-list>
       <v-list-item class="mx-10">
         <v-list-item-action>
@@ -62,15 +62,10 @@
 <script>
 export default {
   name: "Sidebar",
-
-  data() {
-    return {
-      drawer: "",
-    };
-  },
-
-  created() {
-    this.drawer = this.$store.getters.GET_DRAWER;
+  computed: {
+    getDrawer() {
+      return this.$store.getters.GET_DRAWER;
+    },
   },
 };
 </script>
