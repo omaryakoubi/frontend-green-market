@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex justify-space-around mb-6">
+  <div>
     <v-btn class="red lighten-5 pa-2" outlined fab small @click="decrement()">
       <v-icon class="red--text">mdi-minus-box</v-icon>
     </v-btn>
     {{ number }}
-    <v-btn class="green lighten-5 pa-2" outlined fab small @click="increment()">
+    <v-btn class="green lighten-5 pa-5" outlined fab small @click="increment()">
       <v-icon class="green--text">mdi-plus-box</v-icon>
     </v-btn>
   </div>

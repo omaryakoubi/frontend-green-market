@@ -25,9 +25,7 @@
             add to cart
             <v-icon>mdi-cart</v-icon>
           </v-btn>
-          <center>
-          <NumberInput v-if="numberInput" />
-          </center>
+          <NumberInput class="d-flex justify-center" v-if="numberInput" />
         </v-card-actions>
       </v-card>
     </v-flex>
