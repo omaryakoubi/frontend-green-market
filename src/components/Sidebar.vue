@@ -28,22 +28,13 @@
       </v-list-item>
 
       <v-list-item>
-        <v-list-item-action>
+        <v-list-item-action >
           <v-icon class="white--text">mdi-view-quilt</v-icon>
         </v-list-item-action>
         <v-list-item-content>
-          <v-list-item-title class="white--text"
-            >All products</v-list-item-title
+          <v-list-item-title class="white--text" 
+            >Products</v-list-item-title
           >
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item>
-        <v-list-item-action>
-          <v-icon class="white--text">mdi-cart</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
-          <v-list-item-title class="white--text">Cart</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 

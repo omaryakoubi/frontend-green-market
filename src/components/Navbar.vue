@@ -10,6 +10,13 @@
         <span class="font-weight-light">Market</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+          <v-btn
+            class="mx-6"
+            color="green lighten-1"
+            text>
+            <v-icon>mdi-cart</v-icon>
+            your cart
+          </v-btn>
     </v-toolbar>
   </nav>
 </template>
