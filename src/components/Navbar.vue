@@ -14,7 +14,7 @@
             class="mx-6"
             color="green lighten-1"
             text
-            @click="cart">
+            @click="navigateToCart">
             <v-icon>mdi-cart</v-icon>
             your cart
           </v-btn>
@@ -29,7 +29,7 @@ export default {
     drawerOpen() {
       this.$store.dispatch("SET_DRAWER");
     },
-    cart() {
+    navigateToCart() {
       this.$router.push("/cart")
     }
   },
