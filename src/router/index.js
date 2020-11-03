@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../view/Home.vue";
-import Cart from "../components/CartList.vue"
+import Cart from "../view/Cart.vue"
 Vue.use(VueRouter);
 
 const routes = [
