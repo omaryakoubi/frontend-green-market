@@ -4,8 +4,8 @@
       <v-icon class="red--text">mdi-minus-box</v-icon>
     </v-btn>
     {{ number }}
-    <v-btn class="green lighten-5 pa-5" outlined fab small @click="increment()">
-      <v-icon class="green--text">mdi-plus-box</v-icon>
+      <v-btn class="green lighten-5 pa-5" outlined fab small @click="increment()">
+        <v-icon class="green--text">mdi-plus-box</v-icon>
     </v-btn>
   </div>
 </template>
@@ -34,4 +34,3 @@ export default {
 };
 </script>
 
-<style scoped></style>

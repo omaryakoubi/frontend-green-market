@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "Cart",
+  name: "CartList",
   data() {
       return {
           cart:""
