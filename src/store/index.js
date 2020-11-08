@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    cart: [{name:"omar"}, {name:"test"}],
+    cart: [{name:"omar", price:10, quantity:12,}, {name:"test"}],
     drawer: false,
   },
   getters: {

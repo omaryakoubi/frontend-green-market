@@ -1,12 +1,10 @@
 <template>
   <v-app>
-    <center>
-      <v-layout row wrap class="mb9">
+      <v-layout col wrap class="mb9">
         <v-flex v-for="item in cart" :key="item.index">
           {{ item.name }}
         </v-flex>
       </v-layout>
-    </center>
   </v-app>
 </template>
 
